@@ -1,1 +1,5 @@
 # docker
+
+galera/centos
+
+
