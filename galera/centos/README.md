@@ -14,4 +14,7 @@ docker run --detach=true --name node2 -h node2 --link node1:node1 centos:galera-
 docker run --detach=true --name node3 -h node3 --link node1:node1 centos:galera-node3 --wsrep-cluster-name=galera-cluster --wsrep-cluster-address=gcomm://node1   
 
 
+# connect to docker container instance
+docker exec -it node1 /usr/bin/mysql -e "show status"    
+
 
