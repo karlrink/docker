@@ -1,6 +1,6 @@
 # docker
 
-galera/centos
-galera/ubuntu
+galera/centos    
+galera/ubuntu    
 
 
