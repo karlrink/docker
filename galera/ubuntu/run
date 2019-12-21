@@ -1,0 +1,7 @@
+
+docker run -i -d --name Node1 --network node1 \
+      -p 3306:3306 -p 4567:4567 -p 4568:4568 -p 4444:4444 \
+      -v /var/container_data/mysql:/var/lib/mysql \
+      ubuntu:galera-node1
+
+
