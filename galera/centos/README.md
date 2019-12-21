@@ -2,9 +2,9 @@
 # a three node galera cluster
 
 # build container images...
-docker build -t centos:galera-node1 ./
-docker build -t centos:galera-node2 ./
-docker build -t centos:galera-node3 ./
+docker build -t centos:galera-node1 ./    
+docker build -t centos:galera-node2 ./    
+docker build -t centos:galera-node3 ./    
 
 # deploy container
 docker run --detach=true --name node1 -h node1 centos:galera-node1 --wsrep-new-cluster --wsrep-cluster-name=galera-cluster --wsrep-cluster-address=gcomm://   
